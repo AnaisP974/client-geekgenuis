@@ -11,7 +11,7 @@ const Detail = () => {
             const response = await fetch(`http://localhost:3000/articles?id=${id}`);
             const result = await response.json();
             if (result.length > 0) {
-                setArticle(result);
+                setArticle(result.articles);
             } else {
                 alert('Article not found');
             }
