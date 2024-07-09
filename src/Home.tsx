@@ -14,7 +14,7 @@ function Home() {
   const getArticles = async() => {
       try {
           // const response = await fetch("/db.json")
-          const response = await fetch("https://api-geekgenuis.vercel.app/db.json")
+          const response = await fetch("https://client-geekgenuis.vercel.app/db.json")
           const result = await response.json()
           // je mets à jour mon state locale 
           setData(result)
