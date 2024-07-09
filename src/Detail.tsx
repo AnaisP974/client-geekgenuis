@@ -8,7 +8,7 @@ const Detail = () => {
 
     const getArticle = async () => {
         try {
-            const response = await fetch(`http://localhost:3000/articles?id=${id}`);
+            const response = await fetch(`/db.json?id=${id}`);
             const result = await response.json();
             if (result.length > 0) {
                 setArticle(result.articles);
