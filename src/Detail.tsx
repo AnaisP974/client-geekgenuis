@@ -1,6 +1,8 @@
 import { useEffect, useState } from "react";
 import { Article } from "./interfaces/Article";
 import { NavLink, useParams } from "react-router-dom";
+import Navbar from "./components/Navbar";
+import Footer from "./components/Footer";
 
 const Detail = () => {
     const [data, setData] = useState<Article[]>([]);
@@ -43,6 +45,7 @@ const Detail = () => {
 
     return (
         <>
+        <Navbar />
             <section className="relative pt-12 bg-gray-900 text-gray-400 body-font">
                 <div className="items-center flex flex-wrap">
                     <div className="w-full md:w-4/12 ml-auto mr-auto px-4">
@@ -85,34 +88,17 @@ const Detail = () => {
                                         </div>
                                     </div>
                                 </li>
-                                <li className="py-2">
-                                    <div className="flex items-center">
-                                        <div>
-                                            <span className="text-xs font-semibold inline-block py-1 px-2 uppercase rounded-full text-pink-600 bg-pink-200 mr-3"><i className="far fa-paper-plane"></i></span>
-                                        </div>
-                                        <div>
-                                            <NavLink to={"/"}>
-                                                <h4 className="text-blueGray-500">Revenir à l'accueil</h4>
-                                            </NavLink>
-                                        </div>
-                                    </div>
-                                </li>
                             </ul>
+                            <NavLink to={"/"} className="inline-flex items-center mt-3 text-indigo-400">Revenir à l'accueil
+                                <svg fill="none" stroke="currentColor" strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" className="w-4 h-4 ml-2" viewBox="0 0 24 24">
+                                <path d="M5 12h14M12 5l7 7-7 7"></path>
+                                </svg>
+                            </NavLink>
                         </div>
                     </div>
                 </div>
-                <footer className="relative  pt-8 pb-6 mt-8">
-                    <div className="container mx-auto px-4">
-                        <div className="flex flex-wrap items-center md:justify-between justify-center">
-                            <div className="w-full md:w-6/12 px-4 mx-auto text-center">
-                                <div className="text-sm text-blueGray-500 font-semibold py-1">
-                                    Made with <a href="https://www.creative-tim.com/product/notus-js" className="text-blueGray-500 hover:text-gray-800" target="_blank">Notus JS</a> by <a href="https://www.creative-tim.com" className="text-blueGray-500 hover:text-blueGray-800" target="_blank"> Creative Tim</a>.
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </footer>
             </section>
+            <Footer />
         </>
     );
 };
