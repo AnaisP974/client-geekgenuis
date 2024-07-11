@@ -1,7 +1,13 @@
-
+import React from 'react';
 import './toggle.css'
 
-export const Toggle = ({handleChange, isChecked, mode}) => {
+interface Toggle{
+    handleChange: () => void,
+    isChecked: boolean,
+    mode: string,
+}
+
+export const Toggle: React.FC<Toggle> = ({handleChange, isChecked, mode}) => {
   return (
     <div className='toggle-container flex'>
         <input 
