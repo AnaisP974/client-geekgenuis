@@ -46,7 +46,7 @@ const Detail = () => {
     return (
         <>
         <Navbar />
-            <section className="relative pt-12 bg-gray-900 text-gray-400 body-font">
+            <section className="relative pt-12 body-font">
                 <div className="items-center flex flex-wrap">
                     <div className="w-full md:w-4/12 ml-auto mr-auto px-4">
                         <img alt={article.titre} className="max-w-full rounded-lg shadow-lg" src={article.img} />
