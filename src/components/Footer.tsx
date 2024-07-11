@@ -1,10 +1,10 @@
 const Footer = () => {
   return (
-    <footer className="relative text-gray-400 bg-gray-900 body-font pt-8 pb-6">
-      <div className="container mx-auto px-4">
-        <div className="flex flex-wrap items-center md:justify-between justify-center">
-          <div className="w-full md:w-6/12 px-4 mx-auto text-center">
-            <div className="text-sm text-blueGray-500 font-semibold py-1">
+    <footer className="relative pt-8 pb-6 body-font">
+      <div className="container px-4 mx-auto">
+        <div className="flex flex-wrap items-center justify-center md:justify-between">
+          <div className="w-full px-4 mx-auto text-center md:w-6/12">
+            <div className="py-1 text-sm font-semibold text-blueGray-500">
               GeekGenuis © 2024 PREPAVENIR CDA - Ibrahima et Anaïs.
             </div>
           </div>

@@ -63,14 +63,14 @@ function Home() {
   return (
     <>
       <Navbar />
-      <section className="text-gray-400 bg-gray-900 body-font">
+      <section className=" body-font">
         <div className="container px-5 py-24 mx-auto">
           <div className="flex flex-col">
-            <div className="h-1 overflow-hidden bg-gray-800 rounded">
-              <div className="w-24 h-full bg-indigo-500"></div>
+            <div className="h-1 overflow-hiddenrounded">
+              <div className="w-24 h-full"></div>
             </div>
             <div className="flex flex-col flex-wrap py-6 mb-12 sm:flex-row">
-              <h1 className="mb-2 text-2xl font-medium text-white sm:w-2/5 title-font sm:mb-0">Geek Genuis</h1>
+              <h1 className="mb-2 text-2xl font-medium sm:w-2/5 title-font sm:mb-0">Geek Genuis</h1>
               <CategoryButtons categories={categories} handleClick={handleClick} catSelected={catSelected} />
             </div>
           </div>

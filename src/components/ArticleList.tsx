@@ -16,7 +16,7 @@ const ArticleList: React.FC<ArticleListProps> = ({ currentItems }) => {
             </div>
             <figcaption className="p-3 text-white bg-yellow-500">{article.category}</figcaption>
           </figure>
-          <h2 className="mt-5 text-xl font-medium text-white title-font">{article.titre}</h2>
+          <h2 className="mt-5 text-xl font-medium title-font">{article.titre}</h2>
           <p className="mt-2 text-base leading-relaxed">{article.desc}</p>
           <p className="mt-2 text-base leading-relaxed"><i>{article.signature}, le {article.createdAt}</i> </p>
           <a href={"/" + article.id} className="inline-flex items-center mt-3 text-indigo-400">Learn More
