@@ -39,7 +39,10 @@ toggle:checked + label::after{
     transform: translateX(100%);
 
 }*/
-
+#buttons-cat{
+    background-color: #e6664f;
+    color: white;
+}
 .dark-mode {
     background-color: black;
     color: white;
