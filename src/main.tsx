@@ -12,7 +12,7 @@ import Detail from './Detail.tsx';
 const router = createBrowserRouter([
   {
     path: "/",
-    element: <Home itemsPerPage={4} />
+    element: <Home />
   },
   {
     path: "/:id",
