@@ -550,5 +550,27 @@
       "category": "ReactJS",
       "img": "https://picsum.photos/300/300"
     }
+  ],
+  "categories": [
+    {
+      "id": 1,
+      "name": "Vanilla"
+    },
+    {
+      "id": 2,
+      "name": "ReactJS"
+    },
+    {
+      "id": 3,
+      "name": "AdonisJS"
+    },
+    {
+      "id": 4,
+      "name": "PHP"
+    },
+    {
+      "id": 5,
+      "name": "Symfony"
+    }
   ]
 }
