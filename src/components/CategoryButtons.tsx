@@ -10,7 +10,7 @@ interface CategoryButtonsProps {
 const CategoryButtons: React.FC<CategoryButtonsProps> = ({ categories, handleClick, catSelected }) => {
   return (
     <div className="flex items-center justify-center font-mono">
-      <div className="grid grid-cols-4 gap-4"
+      <div className="grid grid-cols-4 gap-4">
         <h1 
           onClick={() => handleClick("All")} 
           className={`buttons-cat px-3 py-1 shadow-lg shadow-gray-500/50 bg-gray-500 text-white rounded-lg text-[15px] cursor-pointer active:scale-[.97] ${catSelected === "All" ? "bg-indigo-500" : ""}`}
