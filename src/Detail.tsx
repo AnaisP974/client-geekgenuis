@@ -4,6 +4,8 @@ import { NavLink, useParams } from "react-router-dom";
 import Navbar from "./components/Navbar";
 import Footer from "./components/Footer";
 
+
+
 const Detail = () => {
     const [data, setData] = useState<Article[]>([]);
     const [article, setArticle] = useState<Article | null>(null); // Modifié pour stocker un seul article ou null
@@ -47,14 +49,14 @@ const Detail = () => {
         <>
         <Navbar />
             <section className="relative pt-12 body-font">
-                <div className="items-center flex flex-wrap">
-                    <div className="w-full md:w-4/12 ml-auto mr-auto px-4">
+                <div className="flex flex-wrap items-center">
+                    <div className="w-full px-4 ml-auto mr-auto md:w-4/12">
                         <img alt={article.titre} className="max-w-full rounded-lg shadow-lg" src={article.img} />
                     </div>
-                    <div className="w-full md:w-5/12 ml-auto mr-auto px-4">
+                    <div className="w-full px-4 ml-auto mr-auto md:w-5/12">
                         <div className="md:pr-12">
-                            <div className="text-pink-600 p-3 text-center inline-flex items-center justify-center w-16 h-16 mb-6 shadow-lg rounded-full bg-pink-300 mt-8">
-                                <i className="fas fa-rocket text-xl"></i>
+                            <div className="inline-flex items-center justify-center w-16 h-16 p-3 mt-8 mb-6 text-center text-pink-600 bg-pink-300 rounded-full shadow-lg">
+                                <i className="text-xl fas fa-rocket"></i>
                             </div>
                             <h3 className="text-3xl font-semibold">{article.titre}</h3>
                             <p className="mt-4 text-lg leading-relaxed text-blueGray-500">
@@ -65,11 +67,11 @@ const Detail = () => {
                                 Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatem architecto adipisci soluta odio magnam neque corrupti, quibusdam aperiam illum ad voluptates molestiae delectus necessitatibus, molestias omnis magni sed? Dolorem, magni.
                                 Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt libero animi facilis, placeat nisi minus consequatur illum odio sed incidunt voluptatum totam harum quae sint modi commodi nesciunt optio repudiandae?
                             </p>
-                            <ul className="list-none mt-6">
+                            <ul className="mt-6 list-none">
                                 <li className="py-2">
                                     <div className="flex items-center">
                                         <div>
-                                            <span className="text-xs font-semibold inline-block py-1 px-2 uppercase rounded-full text-pink-600 bg-pink-200 mr-3"><i className="fas fa-fingerprint"></i></span>
+                                            <span className="inline-block px-2 py-1 mr-3 text-xs font-semibold text-pink-600 uppercase bg-pink-200 rounded-full"><i className="fas fa-fingerprint"></i></span>
                                         </div>
                                         <div>
                                             <h4 className="text-blueGray-500">
@@ -81,7 +83,7 @@ const Detail = () => {
                                 <li className="py-2">
                                     <div className="flex items-center">
                                         <div>
-                                            <span className="text-xs font-semibold inline-block py-1 px-2 uppercase rounded-full text-pink-600 bg-pink-200 mr-3"><i className="fab fa-html5"></i></span>
+                                            <span className="inline-block px-2 py-1 mr-3 text-xs font-semibold text-pink-600 uppercase bg-pink-200 rounded-full"><i className="fab fa-html5"></i></span>
                                         </div>
                                         <div>
                                             <h4 className="text-blueGray-500">{article.category}</h4>

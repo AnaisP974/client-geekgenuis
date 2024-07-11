@@ -6,13 +6,10 @@ import { Categorie } from "./interfaces/Categorie";
 import CategoryButtons from "./components/CategoryButtons";
 import ArticleList from "./components/ArticleList";
 import "./App.css";
-import { Toggle } from "./components/toggle";
 
 function Home() {
   const [categories, setCategories] = useState<Categorie[]>([]);
   const [catSelected, setCatSelected] = useState("All");
-  const [isDark, setIsdark] = useState(false);
-  const [mode, setMode] = useState('lune');
 
   const [data, setData] = useState<Article[]>([]);
   const [filteredData, setFilteredData] = useState<Article[]>([]);
@@ -65,20 +62,10 @@ function Home() {
     return <div>Loading...</div>
   }
 
-const handleChange = () => {
-    setIsdark(!isDark);
-    if (mode === 'lune') {
-      setMode('soleil');
-    } else {
-      setMode('lune');
-    }
-
-    document.body.classList.toggle('dark-mode');
-  }
   return (
     <>
       <Navbar />
-    <Toggle handleChange={handleChange} isChecked={isDark} mode={mode}/>
+    
       <section className=" body-font">
         <div className="container px-5 py-24 mx-auto">
           <div className="flex flex-col">
