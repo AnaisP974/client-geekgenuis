@@ -74,7 +74,7 @@ function Home() {
               <CategoryButtons categories={categories} handleClick={handleClick} catSelected={catSelected} />
             </div>
           </div>
-          <div className="max-w-3xl m-auto">
+          <div className="max-w-4xl m-auto">
           <ArticleList currentItems={filteredData} />
           </div>
         </div>

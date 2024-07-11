@@ -9,7 +9,7 @@ interface CategoryButtonsProps {
 
 const CategoryButtons: React.FC<CategoryButtonsProps> = ({ categories, handleClick, catSelected }) => {
   return (
-    <div className="flex items-center justify-center font-mono leading-relaxed select-none">
+    <div className="flex items-center justify-center font-mono">
       <div className="grid grid-cols-4 gap-4">
         <h1 
           onClick={() => handleClick("All")} 
