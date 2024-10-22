@@ -12,7 +12,7 @@ Objectifs :
 1. Récuprérer le code :  
 
 ```git
-git clone 
+git clone https://github.com/AnaisP974/client-geekgenuis.git
 ```
 
 2. Installer les node_modules  
